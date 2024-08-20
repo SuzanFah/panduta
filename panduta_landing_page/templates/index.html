@@ -10,16 +10,19 @@
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <href="#" class="logo">Panduta</a>
-    <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
- </nav>
+        <a href="#" class="logo">Panduta</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Header Section -->
+    <!-- Header Section with Image -->
     <header>
+        <div class="image-section">
+            <img src="{{ url_for('static', filename='images/background.jpeg') }}" alt="Panda with Laundry" class="center-image">
+        </div>
         <h1>Welcome to Panduta</h1>
         <p>Your ultimate laundry service provider</p>
         <a href="#register"><button>Register</button></a>
@@ -35,6 +38,26 @@
     <footer>
         <p>&copy; 2024 Panduta. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Add event listeners for forms if they exist
+        const contactForm = document.getElementById('contactForm');
+        const registerForm = document.getElementById('registerForm');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Thank you for contacting us!');
+            });
+        }
+
+        if (registerForm) {
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Registration successful!');
+            });
+        }
+    </script>
 </body>
 </html>
 
