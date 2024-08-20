@@ -11,11 +11,17 @@
 header {
     text-align: center; /* Center text */
     padding: 50px 20px; /* Padding around the header */
-    background-color: var(--primary-color); /* Purple background */
-    color: white; /* White text */
+    background-image: url('{{ url_for('static', filename='images/background.JPG') }}'); /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color to contrast with the image */
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Style the main content section */
@@ -38,14 +44,14 @@ footer {
 
 /* Style navigation bar */
 nav {
-    background-color: #6a0dad; /* Purple background */
+    background-color: var(--primary-color); /* Purple background */
     padding: 10px 20px; /* Padding around the nav */
 }
 
 /* Style the navigation links container */
 .nav-links {
     display: flex; /* Flexbox layout for horizontal alignment */
-    justify-content: center; /* Center items horizontally */
+    justify-content: flex-end; /* Align items to the right */
     list-style: none; /* Remove default list styling */
     margin: 0; /* Remove margin */
     padding: 0; /* Remove padding */
@@ -65,7 +71,7 @@ nav {
 
 /* Hover effect for navigation links */
 .nav-links a:hover {
-    color: #f15bb5; /* Pink accent on hover */
+    color: var(--accent-color); /* Pink accent on hover */
 }
 
 /* Style buttons */

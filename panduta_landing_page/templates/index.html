@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +12,13 @@
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <href="#" class="logo">Panduta</a>
-    <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
- </nav>
+        <a href="#" class="logo">Panduta</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Header Section -->
     <header>
@@ -35,6 +37,25 @@
     <footer>
         <p>&copy; 2024 Panduta. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Add event listeners for forms if they exist
+        const contactForm = document.getElementById('contactForm');
+        const registerForm = document.getElementById('registerForm');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Thank you for contacting us!');
+            });
+        }
+
+        if (registerForm) {
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Registration successful!');
+            });
+        }
+    </script>
 </body>
 </html>
-
