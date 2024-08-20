@@ -1,3 +1,10 @@
+/* Ensure full height and width for html and body */
+html, body {
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
 /* Define a purple color palette */
 :root {
     --primary-color: #6a0dad; /* Purple */
@@ -11,11 +18,18 @@
 header {
     text-align: center; /* Center text */
     padding: 50px 20px; /* Padding around the header */
-    background-color: var(--primary-color); /* Purple background */
-    color: white; /* White text */
+    background-image: url('{{ url_for('static', filename='images/background.JPG') }}'); /* Set background image */
+    background-size: cover; /* Scale the image to cover the entire header */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    color: var(--text-color); /* Use text color defined in :root */
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    overflow: hidden; /* Hide any overflow from the background */
 }
 
 /* Style the main content section */
@@ -28,24 +42,25 @@ main {
 /* Style the footer section */
 footer {
     text-align: center; /* Center text */
-    padding: 10px 0; /* Padding around the footer */
+    padding: 3px 0; /* Adjust padding for a consistent look */
     background-color: var(--primary-color); /* Purple background */
     color: white; /* White text */
-    position: fixed; /* Fix footer at bottom */
     width: 100%; /* Full width */
-    bottom: 0; /* At the bottom */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    position: relative; /* Normal flow, not fixed */
+    margin-top: auto; /* Push the footer to the bottom of the page content */
 }
 
 /* Style navigation bar */
 nav {
-    background-color: #6a0dad; /* Purple background */
+    background-color: var(--primary-color); /* Purple background */
     padding: 10px 20px; /* Padding around the nav */
 }
 
 /* Style the navigation links container */
 .nav-links {
     display: flex; /* Flexbox layout for horizontal alignment */
-    justify-content: center; /* Center items horizontally */
+    justify-content: flex-end; /* Align items to the right */
     list-style: none; /* Remove default list styling */
     margin: 0; /* Remove margin */
     padding: 0; /* Remove padding */
@@ -61,11 +76,12 @@ nav {
     color: white; /* White text */
     text-decoration: none; /* Remove underline */
     font-size: 18px; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 /* Hover effect for navigation links */
 .nav-links a:hover {
-    color: #f15bb5; /* Pink accent on hover */
+    color: var(--accent-color); /* Pink accent on hover */
 }
 
 /* Style buttons */
@@ -78,8 +94,10 @@ button {
     font-size: 16px; /* Font size */
     cursor: pointer; /* Pointer cursor on hover */
     border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 button:hover {
     background-color: var(--accent-color); /* Pink background on hover */
 }
+
