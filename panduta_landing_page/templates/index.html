@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +40,7 @@
     <footer>
         <p>&copy; 2024 Panduta. All rights reserved.</p>
     </footer>
+<<<<<<< HEAD
 
     <script>
         // Add event listeners for forms if they exist
@@ -60,4 +63,27 @@
     </script>
 </body>
 </html>
+=======
+>>>>>>> a59d6c18700d2a846c823850b2f8b43fb89b0409
 
+    <script>
+        // Add event listeners for forms if they exist
+        const contactForm = document.getElementById('contactForm');
+        const registerForm = document.getElementById('registerForm');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Thank you for contacting us!');
+            });
+        }
+
+        if (registerForm) {
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Registration successful!');
+            });
+        }
+    </script>
+</body>
+</html>

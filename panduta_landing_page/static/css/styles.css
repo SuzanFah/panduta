@@ -19,17 +19,27 @@ header {
     text-align: center; /* Center text */
     padding: 50px 20px; /* Padding around the header */
     background-image: url('{{ url_for('static', filename='images/background.JPG') }}'); /* Set background image */
+<<<<<<< HEAD
     background-size: cover; /* Scale the image to cover the entire header */
     background-position: center center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent image repetition */
     color: var(--text-color); /* Use text color defined in :root */
+=======
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color to contrast with the image */
+>>>>>>> a59d6c18700d2a846c823850b2f8b43fb89b0409
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     height: 100vh; /* Full viewport height */
     width: 100%; /* Full width */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+<<<<<<< HEAD
     overflow: hidden; /* Hide any overflow from the background */
+=======
+>>>>>>> a59d6c18700d2a846c823850b2f8b43fb89b0409
 }
 
 /* Style the main content section */
