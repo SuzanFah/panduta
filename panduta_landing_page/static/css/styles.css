@@ -1,0 +1,85 @@
+/* Define a purple color palette */
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #9b5de5; /* Light Purple */
+    --accent-color: #f15bb5; /* Pink Accent */
+    --background-color: #f9f9f9; /* Light Grey Background */
+    --text-color: #333; /* Dark Text */
+}
+
+/* Style the header section */
+header {
+    text-align: center; /* Center text */
+    padding: 50px 20px; /* Padding around the header */
+    background-color: var(--primary-color); /* Purple background */
+    color: white; /* White text */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Style the main content section */
+main {
+    padding: 20px;
+    background-color: var(--background-color); /* Light background color */
+    color: var(--text-color); /* Text color */
+}
+
+/* Style the footer section */
+footer {
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding around the footer */
+    background-color: var(--primary-color); /* Purple background */
+    color: white; /* White text */
+    position: fixed; /* Fix footer at bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* At the bottom */
+}
+
+/* Style navigation bar */
+nav {
+    background-color: #6a0dad; /* Purple background */
+    padding: 10px 20px; /* Padding around the nav */
+}
+
+/* Style the navigation links container */
+.nav-links {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: center; /* Center items horizontally */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Style individual navigation items */
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+/* Style navigation links */
+.nav-links a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for links */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #f15bb5; /* Pink accent on hover */
+}
+
+/* Style buttons */
+button {
+    background-color: var(--primary-color); /* Purple background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    margin: 10px; /* Space around button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: var(--accent-color); /* Pink background on hover */
+}
