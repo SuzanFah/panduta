@@ -82,7 +82,7 @@ main {
 footer {
     text-align: center;
     padding: 3px 0;
-    background-color: var(--primary-color);
+    background-color: transparent; /* Make it fully tgransparent */
     color: white;
     width: 100%;
     box-sizing: border-box;
@@ -92,8 +92,22 @@ footer {
 
 /* Style navigation bar */
 nav {
-    background-color: var(--primary-color);
+    background-color: lightskyblue; /* make it lightskyblue */
     padding: 10px 20px;
+    position: fixed; /* Keeps the nav at the top of the page */
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensures the nav is on top of other content */
+}
+
+/* Style the logo text */
+nav .logo {
+    color: white;
+    font-size: px; /* Adjust size as needed */
+    text-decoration: none;
+    font-family: 'Lilita One', sans-serif; /* Apply lilita-one-regular */
+    font-weight: bold; /* Optional: adds more emphasis */
 }
 
 /* Style the navigation links container */
