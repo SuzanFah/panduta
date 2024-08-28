@@ -18,7 +18,7 @@ html, body {
 
 .logo {
     color: white;
-    font-size: 28px; /* Adjust size as needed */
+    font-size: 38px; /* Adjust size as needed */
     text-decoration: none;
     font-family: 'Lilita One', sans-serif; /* This is correct but can use the class for consistency */
     font-weight: bold; /* Optional: adds more emphasis */
