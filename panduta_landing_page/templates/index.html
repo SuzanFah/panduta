@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panduta - Your Laundry Service</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panduta - Your Laundry Service</title>
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    </head>
 <body>
+
     <!-- Navigation Bar -->
     <nav>
         <a href="#" class="logo">Panduta</a>
@@ -33,7 +38,27 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- Content goes here -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a range of laundry services to suit your needs, including dry cleaning, ironing, and more.</p>
+            <!-- Add service details -->
+        </section>
+    
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <p>Our competitive pricing makes it easy to keep your clothes clean and fresh.</p>
+            <!-- Add pricing details -->
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
 
     <!-- Footer Section -->
@@ -46,7 +71,7 @@
         const contactForm = document.getElementById('contactForm');
         const registerForm = document.getElementById('registerForm');
 
-        if (contactForm) {
+,        if (contactForm) {
             contactForm.addEventListener('submit', function(event) {
                 event.preventDefault();
                 alert('Thank you for contacting us!');

@@ -16,6 +16,14 @@ html, body {
     --text-color: #333; /* Dark Text */
 }
 
+.logo {
+    color: white;
+    font-size: 28px; /* Adjust size as needed */
+    text-decoration: none;
+    font-family: 'Lilita One', sans-serif; /* This is correct but can use the class for consistency */
+    font-weight: bold; /* Optional: adds more emphasis */
+}
+
 /* Style the header section with light baby blue background and video */
 header {
     text-align: center;
