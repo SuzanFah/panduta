@@ -4,51 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panduta - Your Laundry Service</title>
-    <!-- Link to CSS file -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <style>
-        /* Additional styling for the video */
-        .video-section {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            margin: 0 auto; /* Centers the video horizontally */
-            overflow: hidden;
-        }
-
-        .video-section video {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Adjust header to align with the video */
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Style for buttons and other elements */
-        header h1, header p {
-            margin-top: 20px;
-        }
-
-        header button {
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #ff6f61;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        header button:hover {
-            background-color: #ff4b47;
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -61,10 +17,10 @@
         </ul>
     </nav>
 
-    <!-- Header Section with Video -->
+    <!-- Header Section with Video and Fallback Image -->
     <header>
         <div class="video-section">
-            <video controls autoplay loop muted>
+            <video controls autoplay loop muted poster="{{ url_for('static', filename='images/fallback.jpg') }}">
                 <source src="{{ url_for('static', filename='videos/panda_laundry.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
