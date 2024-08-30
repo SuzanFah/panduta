@@ -20,7 +20,7 @@ html, body {
     color: white;
     font-size: 38px; /* Adjust size as needed */
     text-decoration: none;
-    font-family: 'Lilita One', sans-serif; /* This is correct but can use the class for consistency */
+    font-family: "Annie Use Your Telescope", sans-serif; /* This is correct but can use the class for consistency */
     font-weight: bold; /* Optional: adds more emphasis */
 }
 
@@ -92,7 +92,7 @@ footer {
 
 /* Style navigation bar */
 nav {
-    background-color: lightskyblue; /* make it lightskyblue */
+    background-color: rgb(132, 208, 255); /* make it lightskyblue */
     padding: 10px 20px;
     position: fixed; /* Keeps the nav at the top of the page */
     top: 0;
@@ -106,14 +106,16 @@ nav .logo {
     color: white;
     font-size: px; /* Adjust size as needed */
     text-decoration: none;
-    font-family: 'Lilita One', sans-serif; /* Apply lilita-one-regular */
+    font-family: 'Rubik Bubbles', system-ui; /* Apply Rubik Bubbles font */
     font-weight: bold; /* Optional: adds more emphasis */
 }
 
 /* Style the navigation links container */
 .nav-links {
     display: flex;
-    justify-content: flex-end;
+    font-family: 'Annie Use Your Telescope', sans-serif; /* Apply Annie Use Your Telescope font */
+    font-weight:  bold; /* Make the text bold */
+    justify-content: center; /* Center the links */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -127,6 +129,7 @@ nav .logo {
 /* Style navigation links */
 .nav-links a {
     color: white;
+    font-weight:  bold; /* Make the text bold */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -152,4 +155,23 @@ button {
 
 button:hover {
     background-color: var(--accent-color);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-element {
+    animation: float 4s ease-in-out infinite;
+}
+
+.parallax {
+    background-image: url('path/to/background-image.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

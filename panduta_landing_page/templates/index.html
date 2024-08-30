@@ -8,21 +8,20 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
     </head>
 <body>
 
 <!-- Navigation Bar -->
 <nav>
-    <a href="#" class="logo">Panduta</a>
     <ul class="nav-links">
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#pricing" class="nav-link">Pricing</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#Our Story" class="nav-link">Our Story</a></li>
+        <li><a href="#Why Panduta?" class="nav-link">Why Panduta?</a></li>
+        <li><a href="#Suggestions" class="nav-link">Suggestions</a></li>
     </ul>
 </nav>
 
-    <!-- Header Section with Video and Fallback Image -->
+<!-- Header Section with Video and Fallback Image -->
     <header>
         <div class="video-section">
             <video controls autoplay loop muted poster="{{ url_for('static', filename='images/fallback.jpg') }}">
@@ -36,12 +35,17 @@
         <a href="#book"><button>Book Now</button></a>
     </header>
 
+    <!-- Parallax Section -->
+<div class="parallax">
+    <!-- You can add content here if needed -->
+</div>
+
     <!-- Main Content Section -->
 
      <main>
             <!-- Registration Section -->
             <section class="registration">
-                <h2>Stay Updated!</h2>
+                <h2 class="floating-element">Stay Tuned!</h2>
                 <p>Register your email to get updates of our launch in the techverse.</p>
                 <form id="registrationForm">
                     <input type="email" name="email" placeholder="Enter your email" required>
