@@ -3,8 +3,8 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-    font-family: cursive, sans-serif;
-    background-color: #b3e0ff; /* Light blue background */
+    font-family: cursive, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #b3e0ff; /* Light blue background */ 
 }
 
 /* Define a purple color palette */
@@ -28,7 +28,7 @@ html, body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background-color: lightblue;
+    background-color: #b3e0ff; 
     color: rgb(3, 16, 21);
     display: flex;
     flex-direction: column;
@@ -74,7 +74,7 @@ header .video-section video {
 /* Style the main content section */
 main {
     padding: 20px;
-    background-color: lightblue;
+    background-color: transparent;
     color: black;
 }
 
@@ -92,7 +92,7 @@ footer {
 
 /* Style navigation bar */
 nav {
-    background-color: rgb(132, 208, 255); /* make it lightskyblue */
+    background-color: transparent; /* make it lightskyblue */
     padding: 10px 20px;
     position: fixed; /* Keeps the nav at the top of the page */
     top: 0;
@@ -165,13 +165,40 @@ button:hover {
 
 .floating-element {
     animation: float 4s ease-in-out infinite;
+    font-size: 30px;
+    font-family: 'Annie Use Your Telescope';
+    padding-right: 20px;
+    color: var(--accent-color);
 }
 
-.parallax {
-    background-image: url('path/to/background-image.jpg');
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.registration {
+    display: flex;
+    background-color: transparent; /* Ensure it doesn't have any color */
+    justify-content: center;
+    align-items: center;
+    max-width: 150%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.registration p {
+    margin: 0;
+    font-family: 'Annie Use Your Telescope';
+    padding-right: 10px; /* Space between text and input */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.registration input[type="email"] {
+    margin-right: 10px; /* Space between input and button */
+    padding: 5px;
+    font-size: 0.9em;
+    width: 250px; /* Adjust width as necessary */
+}
+
+.registration button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
 }

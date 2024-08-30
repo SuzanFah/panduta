@@ -1,0 +1,52 @@
+/* Styles for Our Story page */
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Styles for Why Panduta page */
+.reasons-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reasons-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Styles for Suggestions page */
+.suggestion-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.suggestion-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.suggestion-form input,
+.suggestion-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.suggestion-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.suggestion-form button:hover {
+    background-color: var(--accent-color);
+}
