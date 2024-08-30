@@ -1,4 +1,5 @@
-from flask import Flask, render_template, send_from_directory # type: ignorefrom dotenv import load_dotenv
+from flask import Flask, render_template, send_from_directory # type: ignore
+from dotenv import load_dotenv
 import os
 
 load_dotenv()
