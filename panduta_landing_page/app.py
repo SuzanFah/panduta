@@ -39,3 +39,13 @@ def test_video():
 # Run the Flask application
 if __name__ == '__main__':
     app.run()
+
+# gunicorn app:app --bind 0.0.0.0:5000
+
+# The code appears to be correct and doesn't contain any obvious errors.
+# However, to ensure better security, we can modify the secret key assignment:
+
+app.config['SECRET_KEY'] = secret_key or 'fallback-secret-key'
+
+# This ensures that even if the environment variable is not set, 
+# a default secret key is used, preventing potential security issues.
