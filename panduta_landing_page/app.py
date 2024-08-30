@@ -1,7 +1,17 @@
-from flask import Flask, render_template # type: ignore
+from flask import Flask, render_template, send_from_directory # type: ignorefrom dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # Initialize Flask application
 app = Flask(__name__, static_folder='static')
+
+# Configuration
+secret_key = os.environ.get('SECRET_KEY')
+debug_mode = os.environ.get('DEBUG')
+
+app.config['SECRET_KEY'] = secret_key
+app.config['DEBUG'] = debug_mode == 'True'
 
 # Define route for the landing page
 @app.route('/')
@@ -27,4 +37,4 @@ def test_video():
 
 # Run the Flask application
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)  # Specify port 8000
+    app.run()
