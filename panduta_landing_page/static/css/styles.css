@@ -314,6 +314,91 @@ button:hover {
 }
 
 /* Styles for Why Panduta page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #444;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    color: #222;
+}
+
+/* Comparison Section Styles */
+.comparison-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.comparison-column {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparison-column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #5d5dff;
+    display: flex;
+    align-items: center;
+}
+
+.comparison-column h2 i {
+    margin-right: 10px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list li i {
+    margin-right: 15px;
+    color: #5d5dff;
+    font-size: 1.4rem;
+}
+
+/* Hover Effect */
+.comparison-column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .comparison-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 .reasons-list {
     list-style-type: none;
     padding: 0;
