@@ -4,7 +4,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', cursive, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: #99ccff; /* Light blue background */
+    background-color: #8aceff; /* Light blue background */
 }
 
 /* Define a purple color palette */
@@ -12,7 +12,7 @@ html, body {
     --primary-color: #6a0dad; /* Purple */
     --secondary-color: #9b5de5; /* Light Purple */
     --accent-color: #f15bb5; /* Pink Accent */
-    --background-color: #99ccff; /* Updated to Light Blue Background */
+    --background-color: #8aceff; /* Updated to Light Blue Background */
     --text-color: #333; /* Dark Text */
 }
 
