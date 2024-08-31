@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Panduta? - Your Ultimate Laundry Solution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body class="why-panduta-page">
+    <nav>
+        <!-- Include your navigation here -->
+    </nav>
+
+    <main>
+        <h1 class="page-title">Why Choose Panduta? 🐼✨</h1>
+        
+        <section class="unique-features">
+            <div class="feature-card">
+                <h2>🚀 Unique Approach</h2>
+                <p>Revolutionizing laundry services with cutting-edge technology and user-centric design.</p>
+            </div>
+            <div class="feature-card">
+                <h2>💡 Innovative Solutions</h2>
+                <p>Tackling common laundry challenges with creative, efficient, and eco-friendly methods.</p>
+            </div>
+            <div class="feature-card">
+                <h2>👥 Expert Team</h2>
+                <p>Backed by a dedicated team of laundry and tech professionals committed to your satisfaction.</p>
+            </div>
+        </section>
+
+        <section class="comparison-container">
+            <div class="comparison-column provider">
+                <h2>🏢 Laundry Provider Interface</h2>
+                <ul class="feature-list">
+                    <li><i class="fas fa-store"></i> Business Registration</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Location Details</li>
+                    <li><i class="fas fa-dollar-sign"></i> Price Range Setting</li>
+                    <li><i class="fas fa-truck"></i> Delivery Options</li>
+                    <li><i class="fas fa-tshirt"></i> Fabric Types Handled</li>
+                    <li><i class="fas fa-image"></i> Logo Upload</li>
+                    <li><i class="fas fa-map"></i> Service Area Coverage</li>
+                </ul>
+            </div>
+            <div class="comparison-column customer">
+                <h2>👤 Customer Interface</h2>
+                <ul class="feature-list">
+                    <li><i class="fas fa-search"></i> Provider Search</li>
+                    <li><i class="fas fa-filter"></i> Advanced Filtering</li>
+                    <li><i class="fas fa-list-ul"></i> Results Display</li>
+                    <li><i class="fas fa-sort"></i> Sorting Options</li>
+                    <li><i class="fas fa-heart"></i> Favorite Providers</li>
+                    <li><i class="fas fa-calendar-alt"></i> Booking System</li>
+                    <li><i class="fas fa-star"></i> Provider Ratings</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panduta. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add interactivity
+        document.querySelectorAll('.feature-card, .comparison-column').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.style.transform = 'scale(1.05)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
