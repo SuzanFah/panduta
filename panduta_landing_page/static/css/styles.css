@@ -374,17 +374,3 @@ button:hover {
       text-align: center;
       margin-bottom: 30px;
   }
-  .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-  }
-
-  .video-container video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
