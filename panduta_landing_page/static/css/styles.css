@@ -28,7 +28,7 @@ html, body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background-color: #b3e0ff; 
+    background-color: #8aceff; 
     color: rgb(3, 16, 21);
     display: flex;
     flex-direction: column;
@@ -326,38 +326,75 @@ button:hover {
     border-radius: 5px;
 }
 
-/* Styles for Suggestions page */
+:root {
+    --primary-color: #6a0dad;
+    --secondary-color: #9b5de5;
+    --accent-color: #f15bb5;
+    --background-color: #b3e0ff;
+    --text-color: #333;
+}
+
+body.suggestions-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.page-title {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
 .suggestion-form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.suggestion-form label {
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
-.suggestion-form input,
-.suggestion-form textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.suggestion-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: var(--primary-color);
+.submit-btn {
+    background-color: var(--accent-color);
     color: white;
     border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.suggestion-form button:hover {
-    background-color: var(--accent-color);
-}
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}}
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -374,3 +411,55 @@ button:hover {
       text-align: center;
       margin-bottom: 30px;
   }
+
+.comparison-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.comparison-column {
+  flex-basis: 45%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.comparison-column:hover {
+  transform: translateY(-5px);
+}
+
+.comparison-column h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list i {
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .comparison-container {
+    flex-direction: column;
+  }
+  
+  .comparison-column {
+    margin-bottom: 2rem;
+  }
+}

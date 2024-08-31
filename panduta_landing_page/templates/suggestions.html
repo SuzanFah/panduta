@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suggestions - Panduta</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions - Panduta</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav>
-        <!-- Copy your updated navigation here -->
-    </nav>
+<body class="suggestions-page">
+  <nav>
+      <ul class="nav-links">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('our_story') }}">Our Story</a></li>
+          <li><a href="{{ url_for('why_panduta') }}">Why Panduta</a></li>
+          <li><a href="{{ url_for('suggestions') }}">Suggestions</a></li>
+      </ul>
+  </nav>
 
-    <main>
-        <h1>Suggestions</h1>
-        <p>We value your input! Please share your suggestions with us:</p>
-        <form class="suggestion-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <main>
+      <section class="comparison-container">
+          <div class="comparison-column provider">
+            <h2>Laundry Provider Interface</h2>
+            <ul class="feature-list">
+              <li><i class="fas fa-store"></i> Business Registration</li>
+              <li><i class="fas fa-map-marker-alt"></i> Location Details</li>
+              <li><i class="fas fa-dollar-sign"></i> Price Range Setting</li>
+              <li><i class="fas fa-truck"></i> Delivery Options</li>
+              <li><i class="fas fa-tshirt"></i> Fabric Types Handled</li>
+              <li><i class="fas fa-image"></i> Logo Upload</li>
+              <li><i class="fas fa-map"></i> Service Area Coverage</li>
+            </ul>
+          </div>
+          <div class="comparison-column customer">
+            <h2>Customer Interface</h2>
+            <ul class="feature-list">
+              <li><i class="fas fa-search"></i> Provider Search</li>
+              <li><i class="fas fa-filter"></i> Advanced Filtering</li>
+              <li><i class="fas fa-list-ul"></i> Results Display</li>
+              <li><i class="fas fa-sort"></i> Sorting Options</li>
+              <li><i class="fas fa-heart"></i> Favorite Providers</li>
+              <li><i class="fas fa-calendar-alt"></i> Booking System</li>
+              <li><i class="fas fa-star"></i> Provider Ratings</li>
+            </ul>
+          </div>
+      </section>
+        
+      <h1 class="page-title">Your Ideas Shape Our Future</h1>
+      <p class="intro-text">We value your input! Help us improve Panduta with your brilliant suggestions:</p>
+      <form class="suggestion-form">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="suggestion">Your Suggestion</label>
+              <textarea id="suggestion" name="suggestion" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Suggestion</button>
+      </form>
+  </main>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="suggestion">Your Suggestion:</label>
-            <textarea id="suggestion" name="suggestion" required></textarea>
-
-            <button type="submit">Submit Suggestion</button>
-        </form>
-    </main>
-
-    <footer>
-        <!-- Copy your footer here -->
-    </footer>
+  <footer>
+      <p>© 2024 Panduta. All rights reserved.</p>
+  </footer>
 </body>
 </html>
