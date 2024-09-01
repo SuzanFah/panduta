@@ -2,6 +2,7 @@ from flask import Flask, render_template, send_from_directory # type: ignore
 from dotenv import load_dotenv
 import os
 
+# Load environment variables from a .env file
 load_dotenv()
 
 # Initialize Flask application
@@ -9,10 +10,10 @@ app = Flask(__name__, static_folder='static')
 
 # Configuration
 secret_key = os.environ.get('SECRET_KEY')
-debug_mode = os.environ.get('DEBUG')
+debug_mode = os.environ.get('DEBUG' 'False').lower()
 
 app.config['SECRET_KEY'] = secret_key
-app.config['DEBUG'] = debug_mode == 'True'
+app.config['DEBUG'] = debug_mode
 
 # Define route for the landing page
 @app.route('/')
@@ -38,5 +39,6 @@ def test_video():
 
 # Run the Flask application
 if __name__ == '__main__':
-      app.run(host='0.0.0.0', port=8000, debug=True)
+      app.run(host='0.0.0.0', port=8000)
+
 
