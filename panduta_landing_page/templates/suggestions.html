@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+   <!-- Add your favicon links here -->
+   <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+   <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
 </head>
 <body class="suggestions-page">
   <nav>
       <ul class="nav-links">
+        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
           <li><a href="{{ url_for('index') }}">Home</a></li>
           <li><a href="{{ url_for('our_story') }}">Our Story</a></li>
           <li><a href="{{ url_for('why_panduta') }}">Why Panduta</a></li>

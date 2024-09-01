@@ -6,6 +6,164 @@
 }
 
 /* Styles for Why Panduta page */
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a4a4dc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #292b2c;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #f7f7f9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+}
+
+/* Main Section */
+.page-title {
+    text-align: center;
+    margin-top: 2rem;
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Unique Features */
+.unique-features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card h2 {
+    color: #28a745;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Comparison Section */
+.comparison-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    background-color: #007bff;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 2rem 0;
+}
+
+.comparison-column {
+    width: 45%;
+}
+
+.comparison-column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffc107;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list i {
+    margin-right: 1rem;
+    color: #ffc107;
+}
+
+/* Footer */
+footer {
+    background-color: #292b2c;
+    color: #f7f7f9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Hover Effects for Interactivity */
+.comparison-column:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.comparison-column:hover h2 {
+    color: #ffc107;
+}
+
+.comparison-column:hover .feature-list i {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .unique-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comparison-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comparison-column {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
 .reasons-list {
     list-style-type: none;
     padding: 0;

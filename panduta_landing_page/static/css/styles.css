@@ -91,6 +91,7 @@ footer {
 }
 
 /* Style navigation bar */
+/* Ensure these styles are applied consistently across all pages */
 nav {
     background-color: transparent; /* make it lightskyblue */
     padding: 10px 20px;
@@ -185,6 +186,7 @@ button:hover {
     margin: 0;
     font-family: 'Annie Use Your Telescope';
     padding-right: 10px; /* Space between text and input */
+    color: white;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -315,17 +317,57 @@ button:hover {
 
 /* Styles for Why Panduta page */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'poppins', cursive, sans-serif;
+    background-color: #9a9acd;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-h1, h2 {
-    font-weight: 700;
-    color: #444;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+.h1 {
+    font-family: 'Rubik Wet Paint', cursive; /* Trendy and bumpy font */
+    text-align: center; /* Center-align everything */
+    margin: 50px auto; /* Center the section with margin */
+    padding: 30px; /* Add padding for spacing */
+    background-color: #ffdde1; /* Soft pink background for a bumpy effect */
+    border-radius: 20px; /* Smooth, rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Strong shadow for depth */
+    animation: bounce 2s infinite; /* Add a bumpy bounce animation */
 }
+
+.h2 {
+    font-size: 32px; /* Larger font size for the heading */
+    color: #ff007f; /* Vivid pink color for the heading */
+    text-shadow: 3px 3px 0px #ffe5ec; /* 3D effect with shadow */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.p {
+    font-size: 18px; /* Slightly larger paragraph font size */
+    line-height: 1.8; /* Increase line height for readability */
+    color: #2c3e50; /* Deep color for paragraphs */
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+.strong {
+    color: #ff007f; /* Emphasize strong text with pink color */
+}
+
+/* Bumpy bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Start/end in original position */
+    }
+    40% {
+        transform: translateY(-10px); /* Move up */
+    }
+    60% {
+        transform: translateY(-5px); /* Slight move up */
+    }
+}
+
 
 .page-title {
     text-align: center;
@@ -352,6 +394,7 @@ h1, h2 {
     width: 45%;
     margin: 20px 0;
     padding: 20px;
+    align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -479,7 +522,7 @@ body.suggestions-page {
 
 .submit-btn:hover {
     background-color: var(--secondary-color);
-}}
+}
 
 @keyframes fadeIn {
     from { opacity: 0; }

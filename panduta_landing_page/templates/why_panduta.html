@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Panduta? - Your Ultimate Laundry Solution</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+     <!-- Add your favicon links here -->
+     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
 </head>
 <body class="why-panduta-page">
     <nav>
             <ul class="nav-links">
+                <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 <li><a href="{{ url_for('our_story') }}">Our Story</a></li>
                 <li><a href="{{ url_for('why_panduta') }}">Why Panduta</a></li>
@@ -18,22 +23,24 @@
     </nav>
 
     <main>
-        <h1 class="page-title">Why Choose Panduta? 🐼✨</h1>
+        <h1 class="page-title"> Introducing Panduta's Dual Interface System 🐼✨</h1>
         
-        <section class="unique-features">
-            <div class="feature-card">
-                <h2>🚀 Unique Approach</h2>
-                <p>Revolutionizing laundry services with cutting-edge technology and user-centric design.</p>
-            </div>
-            <div class="feature-card">
-                <h2>💡 Innovative Solutions</h2>
-                <p>Tackling common laundry challenges with creative, efficient, and eco-friendly methods.</p>
-            </div>
-            <div class="feature-card">
-                <h2>👥 Expert Team</h2>
-                <p>Backed by a dedicated team of laundry and tech professionals committed to your satisfaction.</p>
-            </div>
+        <section class="introduction">
+            <h2>🎉Our baby bear is tailored🎉</h2>
+            <p>
+                to bring you a seamless experience tailored for everyone involved! Our platform is designed to cater to two key groups:
+            </p>
+            <p>
+                🌟 <strong>Laundry Providers</strong>: Manage your services effortlessly with our dedicated tools. Set your prices, showcase your offerings, and reach more customers—all from one interface.
+            </p>
+            <p>
+                🌍 <strong>Customers</strong>: Discover the best laundry services in your area, filter your options, book your preferred provider, and even leave a rating. Your laundry, your way!
+            </p>
+            <p>
+                Whether you're running a laundry business or looking for the best service in town, Panduta has got you covered with interfaces that make your experience smooth, efficient, and enjoyable.
+            </p>
         </section>
+        
 
         <section class="comparison-container">
             <div class="comparison-column provider">

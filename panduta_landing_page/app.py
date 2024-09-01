@@ -26,7 +26,7 @@ def our_story():
 
 @app.route('/why-panduta')
 def why_panduta():
-    return render_template('why-panduta.html')
+    return render_template('why_panduta.html')
 
 @app.route('/suggestions')
 def suggestions():
@@ -38,5 +38,5 @@ def test_video():
 
 # Run the Flask application
 if __name__ == '__main__':
-    app.run()
+      app.run(host='0.0.0.0', port=8000, debug=True)
 
