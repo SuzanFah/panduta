@@ -79,15 +79,18 @@ main {
 }
 
 /* Style the footer section */
-footer {
+footer p {
     text-align: center;
+    font-weight: bold;
+    font-family: 'Annie Use Your Telescope', sans-serif; /* Apply Annie Use Your Telescope font */
     padding: 3px 0;
     background-color: transparent; /* Make it fully tgransparent */
-    color: white;
+    color: #333333(254, 254, 44);
     width: 100%;
     box-sizing: border-box;
     position: relative;
     margin-top: auto;
+     
 }
 
 /* Style navigation bar */
@@ -218,7 +221,7 @@ button:hover {
     position: relative;
     padding: 100px 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(247, 198, 38, 0.8);
     margin-bottom: 50px;
 }
 
@@ -227,7 +230,7 @@ button:hover {
     border-radius: 50%;
 }
 
-.shape1 {
+.shape3 {
     width: 100px;
     height: 100px;
     background-color: rgba(255, 107, 107, 0.7);
@@ -235,7 +238,7 @@ button:hover {
     left: 10%;
 }
 
-.shape2 {
+.shape4 {
     width: 150px;
     height: 150px;
     background-color: rgba(72, 219, 251, 0.7);
@@ -291,6 +294,11 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.milestone-description {
+    font-size: 16px;
+    color: #d9db3b; /* Use a different color for the paragraph */
+}
+
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
@@ -315,13 +323,14 @@ button:hover {
     }
 }
 
-/* Styles for Why Panduta page */
+/* Styles for Why_Panduta page */
 body {
     font-family: 'poppins', cursive, sans-serif;
     background-color: #9a9acd;
     margin: 0;
     padding: 0;
     color: #333;
+    text-align: center
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
@@ -337,21 +346,21 @@ body {
     animation: bounce 2s infinite; /* Add a bumpy bounce animation */
 }
 
-.h2 {
+h2 {
     font-size: 32px; /* Larger font size for the heading */
-    color: #ff007f; /* Vivid pink color for the heading */
+    color: #3660c3; /* Vivid pink color for the heading */
     text-shadow: 3px 3px 0px #ffe5ec; /* 3D effect with shadow */
     margin-bottom: 20px; /* Space below heading */
 }
 
-.p {
+p {
     font-size: 18px; /* Slightly larger paragraph font size */
     line-height: 1.8; /* Increase line height for readability */
     color: #2c3e50; /* Deep color for paragraphs */
     margin-bottom: 20px; /* Space below each paragraph */
 }
 
-.strong {
+strong {
     color: #ff007f; /* Emphasize strong text with pink color */
 }
 
@@ -377,7 +386,7 @@ body {
     color: #222;
 }
 
-/* Comparison Section Styles */
+/*styling our-story container */
 .comparison-container {
     display: flex;
     justify-content: space-around;
@@ -542,20 +551,27 @@ body.suggestions-page {
       margin-bottom: 30px;
   }
 
-.comparison-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem auto;
-  max-width: 1200px;
-}
+  /*styling why_panduta container */
+  .comparison-container {
+    display: flex; /* Makes the container a flex container */
+    flex-direction: row; /* Aligns items horizontally (default) */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    padding: 20px; /* Padding inside the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    justify-content: space-between; /* Distributes space between items */
+    max-width: 1200px; /* Maximum width of the container */
+  }
 
 .comparison-column {
-  flex-basis: 45%;
-  background: #ffffff;
+  flex-basis: 1 1 45%; /* Allows the columns to take up about 45% of the container width */
+  margin: 10px; /* Space between columns */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  background: #ddd872;
   border-radius: 10px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  align-items: center;
 }
 
 .comparison-column:hover {
@@ -564,7 +580,7 @@ body.suggestions-page {
 
 .comparison-column h2 {
   color: var(--primary-color);
-  text-align: center;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 
