@@ -10,7 +10,7 @@ app = Flask(__name__, static_folder='static')
 
 # Configuration
 secret_key = os.environ.get('SECRET_KEY')
-debug_mode = os.environ.get('DEBUG' 'False').lower()
+debug_mode = os.environ.get('DEBUG', 'False').lower()
 
 app.config['SECRET_KEY'] = secret_key
 app.config['DEBUG'] = debug_mode
