@@ -1,4 +1,4 @@
-# Panduta – Your Ultimate Laundry Solution 🚀🧺📦👕✨
+# Panduta – Your Ultimate Laundry Solution 🚀🧺📦👕
 
 Welcome to **Panduta**, the tech-savvy web solution designed to revolutionize your laundry experience! Created with love by Suzanne Fahim, Panduta connects you with top laundry providers based on location, price, and quality. Whether you're a busy professional, student, or anyone looking to simplify your life, Panduta is here to make your laundry days easier and more efficient. 🌟🌟
 
