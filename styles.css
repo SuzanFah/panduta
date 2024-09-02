@@ -208,3 +208,23 @@ footer {
 .suggestion-form button:hover {
     background-color: var(--accent-color);
 }
+
+/* for a responsive layout, you can use the following media query */
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes the container take up the full height of the viewport */
+    width: 100%;
+}
+
+.video-container video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the video covers the container without distortion */
+}
+@media (max-width: 768px) {
+    .video-container video {
+        object-fit: contain; /* Adjusts the fit for smaller screens */
+    }
+}
