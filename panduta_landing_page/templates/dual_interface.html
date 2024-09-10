@@ -8,8 +8,19 @@
     <!-- Add your favicon links here -->
    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+   <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
+<nav>
+    <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('our_story') }}">Our Story</a></li>
+        <li><a href="{{ url_for('why_panduta') }}">Why Panduta?</a></li>
+        <li><a href="{{ url_for('suggestions') }}">Suggestions</a></li>
+        <li><a href="{{ url_for('dual_interface') }}">Try It</a></li>
+    </ul>
+</nav>
     <div class="dual-interface-container">
         <div class="interface-column provider">
             <h2>Laundry Provider Interface</h2>
