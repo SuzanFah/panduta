@@ -491,48 +491,77 @@ body.suggestions-page {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
-
+/* styling the suggestions form */
 .suggestion-form {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    background-color: rgb(249, 245, 250);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transform: perspective(1000px) rotateX(5deg);
+    transition: all 0.3s ease;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.suggestion-form:hover {
+    transform: perspective(1000px) rotateX(0deg) translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
+  .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+  }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--primary-color);
-}
+  .form-group label {
+      margin-bottom: 5px;
+      color: #121004;
+      font-weight: bold;
+  }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
+  .form-group input,
+  .form-group textarea {
+      width: 95%;
+      padding: 15px;
+      border: 2px solid #ffd700;
+      border-radius: 15px;
+      font-size: 16px;
+      background-color: rgba(255, 215, 0, 0.1);
+      color: #ffd700;
+      transition: all 0.3s ease;
+  }
 
+  .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+      outline: none;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+      transform: scal(1.02);
+  }
 .submit-btn {
-    background-color: var(--accent-color);
-    color: white;
+    background-color: #ffd700;
+    color: #4a0e4e;
     border: none;
-    padding: 12px 20px;
+    padding: 15px 30px;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: #4a0e4e;
+    color: #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    transform: translateY(-5px);
 }
 
 @keyframes fadeIn {
@@ -761,3 +790,4 @@ input[type="submit"]:hover {
 .interface-column.customer select::placeholder {
     color: rgba(255, 215, 0, 0.7);
 }
+
