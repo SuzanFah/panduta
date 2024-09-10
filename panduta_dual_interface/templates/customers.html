@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduta - Customer Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Find a Laundry Provider</h1>
+    <form method="POST">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="delivery_option">Delivery Option:</label>
+        <select id="delivery_option" name="delivery_option">
+            <option value="pickup">Pickup</option>
+            <option value="delivery">Delivery</option>
+            <option value="both">Both</option>
+        </select><br><br>
+
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Search Results:</h2>
+    {% if providers %}
+        <ul>
+        {% for provider in providers %}
+            <li>
+                {{ provider.business_name }} - {{ provider.location }}<br>
+                Services: {{ ', '.join(provider.services) }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No providers found matching your criteria.</p>
+    {% endif %}
+</body>
+</html>

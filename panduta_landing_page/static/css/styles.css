@@ -609,3 +609,155 @@ body.suggestions-page {
     margin-bottom: 2rem;
   }
 }
+
+/* Stylying the dual_interface.html*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Righteous&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a4a4dc, #ffd700);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.dual-interface-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 3rem;
+    max-width: 1400px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.interface-column {
+    flex: 0 0 48%;
+    background: linear-gradient(45deg, #4a0e4e, #6a1b9a);
+    border-radius: 20px;
+    padding: 3.1rem;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.interface-column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    color: #ffd700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+input[type="text"], input[type="file"], select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="file"]:focus, select:focus {
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 15px rgba(255,215,0,0.5);
+}
+
+input[type="submit"] {
+    background: #ffd700;
+    color: #4a0e4e;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+    background: #4a0e4e;
+    color: #ffd700;
+    box-shadow: 0 0 20px rgba(255,215,0,0.7);
+}
+
+.provider-list, .search-results {
+    margin-top: 2rem;
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.provider-item, .result-item {
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.provider-item:hover, .result-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+}
+
+/* Styling for the provider interface */
+.interface-column.provider label {
+    color: #ffd700;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.interface-column.provider input[type="text"],
+.interface-column.provider input[type="file"],
+.interface-column.provider select {
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.interface-column.provider input[type="text"]::placeholder,
+.interface-column.provider input[type="file"]::placeholder,
+.interface-column.provider select::placeholder {
+    color: rgba(255, 215, 0, 0.7);
+}
+ /* Styling for the CUSTOMERS interface */
+ .interface-column.customer label {
+    color: #ffd700;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.interface-column.customer input[type="text"],
+.interface-column.customer input[type="file"],
+.interface-column.customer select {
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.interface-column.customer input[type="text"]::placeholder,
+.interface-column.customer input[type="file"]::placeholder,
+.interface-column.customer select::placeholder {
+    color: rgba(255, 215, 0, 0.7);
+}

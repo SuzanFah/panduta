@@ -1,0 +1,28 @@
+<h2>Laundry Provider Registration</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.business_name.label }}
+        {{ form.business_name() }}
+    </div>
+    <div>
+        {{ form.tax_number.label }}
+        {{ form.tax_number() }}
+    </div>
+    <div>
+        {{ form.location.label }}
+        {{ form.location() }}
+    </div>
+    <div>
+        {{ form.services.label }}
+        {{ form.services() }}
+    </div>
+    <input type="submit" value="Register">
+</form>
+
+<h3>Registered Providers</h3>
+<ul>
+{% for provider in providers %}
+    <li>{{ provider.business_name }} - {{ provider.location }}</li>
+{% endfor %}
+</ul>

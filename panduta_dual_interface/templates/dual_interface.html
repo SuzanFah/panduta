@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduta Dual Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="dual-interface-container">
+        <div class="interface-column provider">
+            <h2>Laundry Provider Interface</h2>
+            <form method="POST" enctype="multipart/form-data">
+                {{ provider_form.hidden_tag() }}
+                <div>{{ provider_form.business_name.label }} {{ provider_form.business_name() }}</div>
+                <div>{{ provider_form.tax_number.label }} {{ provider_form.tax_number() }}</div>
+                <div>{{ provider_form.location.label }} {{ provider_form.location() }}</div>
+                <div>{{ provider_form.price_range.label }} {{ provider_form.price_range() }}</div>
+                <div>{{ provider_form.delivery_options.label }} {{ provider_form.delivery_options() }}</div>
+                <div>{{ provider_form.fabric_types.label }} {{ provider_form.fabric_types() }}</div>
+                <div>{{ provider_form.logo.label }} {{ provider_form.logo() }}</div>
+                <div>{{ provider_form.service_area.label }} {{ provider_form.service_area() }}</div>
+                <div>{{ provider_form.services.label }} {{ provider_form.services() }}</div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div class="interface-column customer">
+            <h2>Customer Interface</h2>
+            <form method="POST">
+                <input type="text" name="location" placeholder="Enter location">
+                <select name="delivery_option">
+                    <option value="pickup">Pickup</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="both">Both</option>
+                </select>
+                <select name="fabric_type">
+                    <option value="">Any Fabric</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="silk">Silk</option>
+                    <option value="wool">Wool</option>
+                    <option value="synthetic">Synthetic</option>
+                </select>
+                <select name="sort_by">
+                    <option value="rating">Sort by Rating</option>
+                    <option value="price_low">Price: Low to High</option>
+                    <option value="price_high">Price: High to Low</option>
+                </select>
+                <input type="submit" value="Search">
+            </form>
+            <!-- Add sections for displaying search results, favorite providers, and provider ratings -->
+        </div>
+    </div>
+</body></html>

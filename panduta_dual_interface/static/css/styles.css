@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #4a0e4e; /* Dark purple text */
+}
+  .dual-interface-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+  }
+
+  .interface-column {
+      flex: 1;
+      min-width: 0;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+h2 {
+    color: #ffd700; /* Yellow headings */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="file"], select {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 2px solid #e6e6fa; /* Light purple border */
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #ffd700; /* Yellow button */
+    color: #4a0e4e; /* Dark purple text */
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a0e4e; /* Dark purple on hover */
+    color: #ffd700; /* Yellow text on hover */
+}
+
+.provider-list, .search-results {
+    margin-top: 2rem;
+    background-color: #e6e6fa; /* Light purple background */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.provider-item, .result-item {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* Add some fun, trendy elements */
+.interface-column::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffd700;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.interface-column::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: #4a0e4e;
+    border-radius: 50%;
+    z-index: -1;
+}
