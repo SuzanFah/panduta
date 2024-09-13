@@ -654,9 +654,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: 3rem;
-    max-width: 1400px;
-    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1150px;
+    width: 90%;
+    margin: 1rem auto;
+    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 30px;
@@ -667,7 +669,7 @@ body {
     flex: 0 0 48%;
     background: linear-gradient(45deg, #4a0e4e, #6a1b9a);
     border-radius: 20px;
-    padding: 3.1rem;
+    padding: 2.5rem;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
 }
