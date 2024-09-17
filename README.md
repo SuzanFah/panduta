@@ -84,7 +84,17 @@ Contributions are always welcome! 🎉 If you have suggestions, improvements, or
 
 ## License 📜
 
-This project is licensed under the MIT License. For more information, please see the LICENSE file. 📄
+All Rights Reserved License
+
+Copyright (c) 2024 Suzanne Fahim / Panduta
+
+All rights reserved. This software and code are proprietary and confidential. Unauthorized copying, use, distribution, modification, or sale of this software, in whole or in part, is strictly prohibited. No rights or permissions are granted without express written consent from the owner.
+
+Violators of this license may face legal consequences, including but not limited to, claims for damages, loss of revenue, and intellectual property infringement.
+
+For permission or legal inquiries, contact susiefahim@gmail.com.
+
+This license applies worldwide and is enforceable under applicable copyright laws and international treaties. 📄
 
 ## Contact 📬
 
