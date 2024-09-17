@@ -1,25 +1,25 @@
-# Panduta – Your Ultimate Laundry Solution 🚀🧺📦👕
+# Panduta™ – Your Ultimate Laundry Solution 🚀🧺📦👕
 
-Welcome to **Panduta**, the tech-savvy web solution designed to revolutionize your laundry experience! Created with love by Suzanne Fahim, Panduta connects you with top laundry providers based on location, price, and quality. Whether you're a busy professional, student, or anyone looking to simplify your life, Panduta is here to make your laundry days easier and more efficient. 🌟🌟
+Welcome to **Panduta™**, the tech-savvy web solution designed to revolutionize your laundry experience! Created with love by Suzanne Fahim, Panduta™ connects you with top laundry providers based on location, price, and quality. Whether you're a busy professional, student, or anyone looking to simplify your life, Panduta™ is here to make your laundry days easier and more efficient. 🌟🌟
 
 ## MVP Overview 📝✨
 
-This MVP is a sneak peek into what Panduta will become. It currently showcases our vision through four pages:
+This MVP is a sneak peek into what Panduta™ will become. It currently showcases our vision through four pages:
 
-- **🏠 Home:** A welcoming introduction to Panduta.
-- **🔍 Why Panduta:** Discover why Panduta is the future of laundry services.
-- **📖 Our Story:** Learn about the journey and inspiration behind Panduta.
+- **🏠 Home:** A welcoming introduction to Panduta™.
+- **🔍 Why Panduta™:** Discover why Panduta™ is the future of laundry services.
+- **📖 Our Story:** Learn about the journey and inspiration behind Panduta™.
 - **💌 Suggestions:** Share your thoughts and suggestions as we continue to develop.
 
 ## What's Next 🚀✨
 
-This MVP is not the final version of Panduta. The full dual-interface system, connecting laundry providers and clients seamlessly, is scheduled for launch at the end of Q4 2024. Stay tuned for more features, including real-time order tracking, smart location matching, and secure payment integration! 🎯📅
+This MVP is not the final version of Panduta™. The full dual-interface system, connecting laundry providers and clients seamlessly, is scheduled for launch at the end of Q4 2024. Stay tuned for more features, including real-time order tracking, smart location matching, and secure payment integration! 🎯📅
 
-Thank you for exploring Panduta! We can't wait to bring you the ultimate laundry solution. 💪🧺✨
+Thank you for exploring Panduta™! We can't wait to bring you the ultimate laundry solution. 💪🧺✨
 
 ## Overview 📝
 
-Panduta is a user-friendly web application that allows users to:
+Panduta™ is a user-friendly web application that allows users to:
 
 - **🗓️ Book Laundry Services:** Schedule pickups and deliveries for your clothes with just a few clicks.
 - **🧺 Choose from Multiple Services:** Select from a variety of laundry options tailored to your specific needs.
@@ -37,7 +37,7 @@ Panduta is a user-friendly web application that allows users to:
 
 ## How It Works 🏛️
 
-Panduta is built on a robust architecture designed for scalability and seamless user experience:
+Panduta™ is built on a robust architecture designed for scalability and seamless user experience:
 
 - **🎨 Client:** A sleek, intuitive web interface that’s easy to navigate.
 - **💻 Server:** A reliable backend that manages business logic, handles API requests, and ensures smooth operation.
@@ -46,7 +46,7 @@ Panduta is built on a robust architecture designed for scalability and seamless 
 
 ## API Endpoints 📡
 
-Panduta’s RESTful API allows easy interaction with the platform:
+Panduta™’s RESTful API allows easy interaction with the platform:
 
 ### User Endpoints
 - **🔐 POST /api/users/register:** Register a new user account.
@@ -65,7 +65,7 @@ Panduta’s RESTful API allows easy interaction with the platform:
 
 ## Data Model 📊
 
-The Panduta data model is designed to keep everything organized and efficient:
+The Panduta™ data model is designed to keep everything organized and efficient:
 
 - **👤 User:** Stores user information, including name, contact details, and login credentials.
 - **📝 Booking:** Records details of each booking, such as service type, pickup and delivery times, and order status.
@@ -80,13 +80,13 @@ The Panduta data model is designed to keep everything organized and efficient:
 
 ## Contributing 🤝
 
-Contributions are always welcome! 🎉 If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request. Let's work together to make Panduta even better! 💪
+Contributions are always welcome! 🎉 If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request. Let's work together to make Panduta™ even better! 💪
 
 ## License 📜
 
 All Rights Reserved License
 
-Copyright (c) 2024 Suzanne Fahim / Panduta
+Copyright (c) 2024 Suzanne Fahim / Panduta™
 
 All rights reserved. This software and code are proprietary and confidential. Unauthorized copying, use, distribution, modification, or sale of this software, in whole or in part, is strictly prohibited. No rights or permissions are granted without express written consent from the owner.
 
@@ -98,8 +98,8 @@ This license applies worldwide and is enforceable under applicable copyright law
 
 ## Contact 📬
 
-For any questions, feedback, or just to say hi, feel free to reach out to me via email at susiefahim@gmail.com, the solo developer behind Panduta. 💌 Let's connect and make laundry day the best day!
+For any questions, feedback, or just to say hi, feel free to reach out to me via email at susiefahim@gmail.com, the solo developer behind Panduta™. 💌 Let's connect and make laundry day the best day!
 
 ---
 
-Thank you for choosing Panduta! 🚀🧺 Let's make laundry simple, easy, and tailored just for you.
+Thank you for choosing Panduta™! 🚀🧺 Let's make laundry simple, easy, and tailored just for you.
